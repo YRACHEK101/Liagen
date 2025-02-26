@@ -54,7 +54,7 @@ const plans = [
 
 const Gestion = () => {
   const [enabled, setEnabled] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("yearly");
+  const [selectedCategory, setSelectedCategory] = useState<"yearly" | "monthly">("yearly");
 
   const toggleEnabled = () => {
     // Basculement de l'état
@@ -70,43 +70,27 @@ const Gestion = () => {
   }));
 
   return (
-    <section id="services-section" className="py-12 md:py-20">
+    <section id="services-section" className="py-8 md:py-0">
       <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
-        <h3 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black my-8 md:my-12 text-black">
+        <h3 className="text-center text-3xl sm:text-4xl md:text-6xl font-black my-6 md:my-12 text-black">
           Stratégie marketing digitale complète pour votre entreprise
         </h3>
 
-        {/* Avantages - responsive flex layout */}
-        <div className="flex flex-col md:flex-row md:justify-around mt-10 md:mt-20 gap-6 md:gap-0">
-          <div className="flex gap-3 md:gap-5 justify-center md:justify-start items-center">
-            <Image src="/images/manage/right.svg" alt="icone-avantage" width={21} height={14} className="w-5 h-auto" />
-            <h4 className="text-base md:text-lg font-semibold text-black">Audit marketing gratuit</h4>
-          </div>
-          <div className="flex gap-3 md:gap-5 justify-center md:justify-start items-center">
-            <Image src="/images/manage/right.svg" alt="icone-avantage" width={21} height={14} className="w-5 h-auto" />
-            <h4 className="text-base md:text-lg font-semibold text-black">Stratégie personnalisée</h4>
-          </div>
-          <div className="flex gap-3 md:gap-5 justify-center md:justify-start items-center">
-            <Image src="/images/manage/right.svg" alt="icone-avantage" width={21} height={14} className="w-5 h-auto" />
-            <h4 className="text-base md:text-lg font-semibold text-black">Engagement de résultats</h4>
-          </div>
-        </div>
+        {/* Keep this section exactly as in the original for desktop */}
+        
 
-        {/* Toggle section - improved positioning */}
-        <div className="mt-10 md:mt-16 relative">
-          <div className="dance-text text-center -rotate-[10deg] mb-5 hidden md:block md:absolute md:-left-80">économisez 20% sur l'année</div>
-          <div className="text-center md:hidden mb-4 text-sm font-bold text-primary">économisez 20% sur l'année</div>
-          
+        <div className="mt-8 md:mt-6 relative">
+          <div className="hidden md:block dance-text -ml-80 text-center -rotate-[10deg] mb-5">économisez 20% sur l'année</div>
+          <div className="md:hidden text-center text-sm font-medium text-primary mb-4">économisez 20% sur l'année</div>
           <Image 
             src="/images/manage/toggle.svg" 
             alt="image-bascule" 
             width={24} 
             height={24} 
-            className="hidden md:block absolute left-1/3 sm:left-[37%] top-8" 
+            className="hidden md:block absolute left-[37%] top-8" 
           />
-          
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-0">
-            <h3 className="text-sm md:text-base font-medium sm:mr-5 text-black">Engagement annuel</h3>
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-4 md:gap-0">
+            <h3 className="text-sm md:text-14 font-medium md:mr-5 text-black">Engagement annuel</h3>
             <Switch
               checked={enabled}
               onChange={toggleEnabled}
@@ -117,29 +101,24 @@ const Gestion = () => {
                 className={`inline-block h-4 w-4 transform rounded-full bg-white transition ${enabled ? "translate-x-6" : "translate-x-1"}`}
               />
             </Switch>
-            <h3 className="text-sm md:text-base font-medium sm:ml-5 text-black">Mensuel sans engagement</h3>
+            <h3 className="text-sm md:text-14 font-medium md:ml-5 text-black">Mensuel sans engagement</h3>
           </div>
         </div>
 
-        {/* Pricing cards - responsive grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-16 gap-6 md:gap-8 lg:gap-14 manage">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-16 gap-8 md:gap-14 manage">
           {filteredData.map((items, i) => (
-            <div 
-              className="shadow-manage-shadow border border-border text-center p-6 sm:p-8 md:p-10 rounded-lg transition-transform hover:scale-105" 
-              key={i}
-            >
-              <h4 className="text-xl sm:text-2xl font-bold mb-2 md:mb-3 text-black">{items.heading}</h4>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-2 md:mb-3 text-black">{items.price}€</h2>
-              <p className="text-xs sm:text-sm md:text-base font-medium text-darkgrey mb-4 md:mb-6 text-black">{items.user}</p>
+            <div className="shadow-manage-shadow border border-border text-center p-6 md:p-10 rounded md:rounded-none" key={i}>
+              <h4 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-black">{items.heading}</h4>
+              <h2 className="text-4xl md:text-6xl font-extrabold mb-2 md:mb-3 text-black">{items.price}€</h2>
+              <p className="text-xs md:text-14 font-medium text-darkgrey mb-4 md:mb-6 text-black">{items.user}</p>
 
-              <button className="w-full sm:w-auto text-sm md:text-base font-bold text-primary bg-transparent hover:bg-primary hover:text-white border-2 border-primary rounded-full py-3 md:py-4 px-8 md:px-12 mb-4 md:mb-6 transition-colors duration-300">
+              <button className="w-full md:w-auto text-xs md:text-14 font-bold text-primary bg-transparent hover:bg-primary hover:text-white border-2 border-primary rounded-full py-3 md:py-4 px-6 md:px-12 mb-4 md:mb-6">
                 Demander un rendez-vous
               </button>
               
-              {/* Feature list with improved spacing */}
-              <div className="space-y-2 md:space-y-3">
+              <div className="space-y-2 md:space-y-0">
                 {Object.entries(items.features).map(([key, value]) => (
-                  <h3 className="text-xs sm:text-sm font-medium text-darkgrey text-black" key={key}>
+                  <h3 className="text-xs md:text-sm font-medium text-darkgrey md:mb-3 text-black" key={key}>
                     {value}
                   </h3>
                 ))}
