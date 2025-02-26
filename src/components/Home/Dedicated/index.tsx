@@ -36,7 +36,7 @@ const Dedie = () => {
                 className="absolute -top-16 -left-32 hidden lg:block"
               />
             </div>
-            <p className="text-6xl font-bold sm:leading-tight text-center -mr-1 lg:text-start">
+            <p className="text-6xl font-bold sm:leading-tight text-center -mr-1 lg:text-start text-black">
               « Passionnés par la création de stratégies marketing qui génèrent des résultats. »
             </p>
             <p className="font-medium text-black/55 text-2xl mt-5 text-center lg:text-start -ml-1">
