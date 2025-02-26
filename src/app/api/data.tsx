@@ -54,43 +54,43 @@ export const DataType: { profession: string; name: string; imgSrc: string; nameC
     profession: "Directeur Marketing",
     name: "Jane Smith",
     imgSrc: "/images/wework/avatar.svg",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Spécialiste SEO",
     name: "John Doe",
     imgSrc: "/images/wework/avatar3.svg",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Gestionnaire des Réseaux Sociaux",
     name: "Emily Johnson",
     imgSrc: "/images/wework/avatar4.svg",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Créateur de Contenu",
     name: "Michael Brown",
     imgSrc: "/images/wework/avatar.svg",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Analyste Marketing",
     name: "Sarah Lee",
     imgSrc: "/images/wework/avatar3.svg",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Designer Graphique",
     name: "David Kim",
     imgSrc: "/images/wework/avatar4.svg",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
 ];
 
@@ -121,8 +121,8 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
       "Les stratégies de marketing fournies par cette agence ont considérablement amélioré notre présence en ligne et notre engagement client.",
     imgSrc: "/images/testimonial/user1.svg",
     rating: 5,
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Leslie Alexander",
@@ -131,8 +131,8 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
       "Leur expertise en SEO et marketing de contenu nous a aidés à obtenir de meilleurs classements dans les moteurs de recherche et à augmenter le trafic.",
     imgSrc: "/images/testimonial/user2.svg",
     rating: 4,
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Cody Fisher",
@@ -141,8 +141,8 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
       "Les campagnes de réseaux sociaux gérées par cette agence ont été très efficaces pour construire notre marque et engager notre public.",
     imgSrc: "/images/testimonial/user3.svg",
     rating: 4,
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Robert Fox",
@@ -151,8 +151,8 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
       "Les stratégies de marketing fournies par cette agence ont considérablement amélioré notre présence en ligne et notre engagement client.",
     imgSrc: "/images/testimonial/user1.svg",
     rating: 4,
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Leslie Alexander",
@@ -161,8 +161,8 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
       "Leur expertise en SEO et marketing de contenu nous a aidés à obtenir de meilleurs classements dans les moteurs de recherche et à augmenter le trafic.",
     imgSrc: "/images/testimonial/user2.svg",
     rating: 4,
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Cody Fisher",
@@ -171,8 +171,8 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
       "Les campagnes de réseaux sociaux gérées par cette agence ont été très efficaces pour construire notre marque et engager notre public.",
     imgSrc: "/images/testimonial/user3.svg",
     rating: 4,
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
-    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
 ];
 
@@ -184,7 +184,7 @@ export const Article: { time: string; heading: string; heading2: string; date: s
     name: "Publié sur MarketingPro",
     date: "19 août 2021",
     imgSrc: "/images/articles/article.png",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     time: "5 min",
@@ -193,7 +193,7 @@ export const Article: { time: string; heading: string; heading2: string; date: s
     name: "Publié sur MarketingPro",
     date: "19 août 2021",
     imgSrc: "/images/articles/article2.png",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     time: "5 min",
@@ -202,7 +202,7 @@ export const Article: { time: string; heading: string; heading2: string; date: s
     name: "Publié sur MarketingPro",
     date: "19 août 2021",
     imgSrc: "/images/articles/article3.png",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     time: "5 min",
@@ -211,7 +211,7 @@ export const Article: { time: string; heading: string; heading2: string; date: s
     name: "Publié sur MarketingPro",
     date: "19 août 2021",
     imgSrc: "/images/articles/article.png",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     time: "5 min",
@@ -220,7 +220,7 @@ export const Article: { time: string; heading: string; heading2: string; date: s
     name: "Publié sur MarketingPro",
     date: "19 août 2021",
     imgSrc: "/images/articles/article2.png",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     time: "5 min",
@@ -229,6 +229,6 @@ export const Article: { time: string; heading: string; heading2: string; date: s
     name: "Publié sur MarketingPro",
     date: "19 août 2021",
     imgSrc: "/images/articles/article3.png",
-    nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
 ];
