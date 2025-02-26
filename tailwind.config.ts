@@ -52,7 +52,6 @@ const config: Config = {
         purple: "#1E013A",
         grey: "#F4F5F6",
         border: "#DBDBDB",
-        darkmode: "#00224a", // This can be removed if not needed
         deepSlate: "#02398A",
       },
       fontSize: {
