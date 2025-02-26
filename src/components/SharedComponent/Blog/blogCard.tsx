@@ -4,7 +4,7 @@ import { Blog } from "@/types/blog";
 import { format } from "date-fns";
 import Link from "next/link";
 
-const BlogCard = ({ blog }: { blog: Blog }) => {
+const CarteBlog: FC<{ blog: Blog }> = ({ blog }) => {
     const { title, coverImage, excerpt, date, slug } = blog;
     return (
         <>
@@ -26,7 +26,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                         {title}
                     </h5>
                     <p className="text-primary text-17 font-medium ">
-                        Read More
+                        Lire la suite
                     </p>
                 </div>
             </Link>
@@ -34,4 +34,4 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
     );
 };
 
-export default BlogCard;
+export default CarteBlog;

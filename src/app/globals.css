@@ -19,8 +19,62 @@ section {
 }
 
 .bg-joinus {
-  background-image: url("/images/joinus/horn.svg"),
-    url("/images/joinus/paint.svg");
+  background-image: url("/images/joinus/horn.svg"), url("/images/joinus/paint.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 84% 100%, 12% 18%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    @apply py-4; /* Reduced padding for smaller screens */
+  }
+
+  .slick-next {
+    right: -30px !important; /* Adjusted position for smaller screens */
+  }
+
+  .slick-prev {
+    left: -30px !important; /* Adjusted position for smaller screens */
+  }
+
+  .bg-joinus {
+    background-position: 70% 100%, 5% 18%; /* Adjusted background position for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    @apply py-6; /* Medium padding for medium screens */
+  }
+
+  .slick-next {
+    right: -50px !important; /* Slightly adjusted position for medium screens */
+  }
+
+  .slick-prev {
+    left: -50px !important; /* Slightly adjusted position for medium screens */
+  }
+
+  .bg-joinus {
+    background-position: 75% 100%, 10% 18%; /* Slightly adjusted background position for medium screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  section {
+    @apply py-8; /* Original padding for large screens */
+  }
+
+  .slick-next {
+    right: -70px !important; /* Original position for large screens */
+  }
+
+  .slick-prev {
+    left: -70px !important; /* Original position for large screens */
+  }
+
+  .bg-joinus {
+    background-position: 84% 100%, 12% 18%; /* Original background position for large screens */
+  }
 }

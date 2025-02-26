@@ -15,7 +15,7 @@ const config: Config = {
       },
       boxShadow: {
         'cause-shadow': '0px 4px 17px 0px #00000008',
-        'linckedin': "0px 19px 30px 0px #00000033",
+        'linkedin': "0px 19px 30px 0px #00000033",
         'manage-shadow': "0px 4px 5px 1px #c1c1c159",
         'testimonial': "0px 5px 10px 0px #5968760D"
       },
@@ -70,9 +70,17 @@ const config: Config = {
       },
       backgroundImage: {
         faqBg: "url('/images/faq/swirl.png')",
-      }
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

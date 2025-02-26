@@ -47,19 +47,19 @@ const settings = {
   ],
 };
 
-const Work = () => {
+const Travail = () => {
   return (
     <section className="relative dark:bg-darkmode py-4 bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-[url('/images/wework/elipse.svg')] before:bg-no-repeat before:bg-center after:absolute after:w-1/3 after:h-1/3 after:bg-[url('/images/wework/vector.svg')] after:bg-no-repeat after:top-28 after:-right-12 after:-z-10">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white my-2">
-            We work in several verticals.
+            Nous offrons des solutions de marketing intégrales.
           </h3>
           <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white opacity-50 lg:mr-48 my-2">
-            We work in several verticals.
+            Nous offrons des solutions de marketing intégrales.
           </h3>
           <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white opacity-25 lg:-mr-32 my-2">
-            We work in several verticals.
+            Nous offrons des solutions de marketing intégrales.
           </h3>
         </div>
       </div>
@@ -71,7 +71,7 @@ const Work = () => {
               <div className="relative">
                 <Image
                   src={items.imgSrc}
-                  alt="gaby"
+                  alt="client"
                   width={182}
                   height={182}
                   className="inline-block m-auto"
@@ -79,10 +79,10 @@ const Work = () => {
                 <div className="absolute right-16 bottom-0 bg-white shadow-linckedin p-5 rounded-full">
                   <Image
                     src={"/images/wework/linkedin.svg"}
-                    alt="greenbg"
+                    alt="linkedin"
                     width={30}
                     height={30}
-                    className="  inline-block "
+                    className="inline-block"
                   />
                 </div>
               </div>
@@ -99,4 +99,5 @@ const Work = () => {
     </section>
   );
 };
-export default Work;
+
+export default Travail;

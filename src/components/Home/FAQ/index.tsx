@@ -1,24 +1,24 @@
-"use client"
+"use client";
 import React from "react";
 import { Icon } from "@iconify/react";
 import { Disclosure } from "@headlessui/react";
 
-const FAQ = () => {
+const FoireAuxQuestions = () => {
   return (
-    <section className="relative py-1 bg-cover bg-center overflow-hidde dark:bg-darkmode">
+    <section className="relative py-1 bg-cover bg-center overflow-hidden dark:bg-darkmode">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="relative rounded-2xl py-24 bg-faqBg bg-no-repeat bg-cover bg-primary">
           <p className="text-lg font-normal text-white text-center mb-6">FAQ</p>
           <h2 className="text-6xl font-semibold text-center text-white mx-72">
-            Frequently asked questions.
+            Questions fréquemment posées.
           </h2>
           <div className="w-full px-4 pt-16">
             <div className="mx-auto w-full max-w-5xl rounded-2xl p-8 bg-white mb-5">
               <Disclosure>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex w-full justify-between items-center text-left text-2xl font-medium focus:outline-none ">
-                      <span className="text-black">Can you design my site?</span>
+                    <Disclosure.Button className="flex w-full justify-between items-center text-left text-2xl font-medium focus:outline-none">
+                      <span className="text-black">Quels services de marketing proposez-vous ?</span>
                       <div
                         className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
                           }`}
@@ -27,11 +27,7 @@ const FAQ = () => {
                       </div>
                     </Disclosure.Button>
                     <Disclosure.Panel className="text-16 text-black/50 font-normal text-left pt-4 mt-6 border-t border-border">
-                      <div className="lg:max-w-70%">
-                        Craven omni memoria patriae zombieland clairvius narcisse
-                        religionis sunt diri undead historiarum. Golums, zombies
-                        unrelenting et Raimi fascinati beheading.
-                      </div>
+                      
                     </Disclosure.Panel>
                   </>
                 )}
@@ -42,7 +38,7 @@ const FAQ = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between items-center rounded-lg text-left text-2xl font-medium focus:outline-none">
-                      <span className="text-black">Can you code my site?</span>
+                      <span className="text-black">Comment mesurez-vous les résultats de vos campagnes ?</span>
                       <div
                         className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
                           }`}
@@ -52,9 +48,10 @@ const FAQ = () => {
                     </Disclosure.Button>
                     <Disclosure.Panel className="text-base text-black/50 pt-4 mt-6 text-left border-t border-border">
                       <div className="lg:max-w-70%">
-                        Craven omni memoria patriae zombieland clairvius narcisse
-                        religionis sunt diri undead historiarum. Golums,
-                        zombies unrelenting  et Raimi fascinati beheading.
+                        Nous utilisons des outils d'analyse avancés pour suivre et mesurer les performances de chaque 
+                        campagne. Nos rapports mensuels détaillés incluent des métriques clés comme le taux de conversion, 
+                        le retour sur investissement, l'engagement, le trafic web et la génération de leads. Nous adaptons 
+                        continuellement nos stratégies en fonction des données obtenues pour optimiser vos résultats.
                       </div>
                     </Disclosure.Panel>
                   </>
@@ -67,7 +64,7 @@ const FAQ = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between items-center rounded-lg text-left text-2xl font-medium focus:outline-none">
-                      <span className="text-black">Where are you located?</span>
+                      <span className="text-black">Comment débute une collaboration avec votre agence ?</span>
                       <div
                         className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
                           }`}
@@ -77,9 +74,11 @@ const FAQ = () => {
                     </Disclosure.Button>
                     <Disclosure.Panel className="text-base text-black/50 pt-4 mt-6 font-normal text-left border-t border-border">
                       <div className="lg:max-w-70%">
-                        Craven omni memoria patriae zombieland clairvius narcisse
-                        religionis sunt diri undead historiarum. Golums,
-                        zombies unrelenting et Raimi fascinati beheading.
+                        Notre collaboration commence par une consultation initiale gratuite où nous 
+                        analysons vos besoins, objectifs et le positionnement actuel de votre marque. 
+                        Ensuite, nous développons une proposition stratégique personnalisée avec un plan d'action 
+                        détaillé et un calendrier de mise en œuvre. Une fois le plan approuvé, notre équipe 
+                        se met au travail pour transformer votre vision marketing en résultats concrets.
                       </div>
                     </Disclosure.Panel>
                   </>
@@ -92,4 +91,5 @@ const FAQ = () => {
     </section>
   );
 };
-export default FAQ;
+
+export default FoireAuxQuestions;

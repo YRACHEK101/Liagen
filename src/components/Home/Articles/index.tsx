@@ -42,9 +42,9 @@ const Articles = () => {
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md relative">
         <div className="text-center">
           <h3 className="text-blue text-22 font-normal tracking-widest">
-            ARTICLES
+            ACTUALITÉS
           </h3>
-          <h3 className="text-65 sm:text-6xl font-bold">Our latest post.</h3>
+          <h3 className="text-65 sm:text-6xl font-bold">Nos derniers articles.</h3>
         </div>
 
         <Slider {...settings}>
@@ -53,13 +53,13 @@ const Articles = () => {
               <div className="bg-white dark:bg-darkmode m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative">
                 <Image
                   src={items.imgSrc}
-                  alt="gaby"
+                  alt="article-image"
                   width={389}
                   height={262}
                   className="inline-block m-auto"
                 />
-                <Link href="/" className="absolute bg-primary text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full top-56 right-11  ">
-                  {items.time} read
+                <Link href="/" className="absolute bg-primary text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full top-56 right-11">
+                  {items.time} min
                 </Link>
                 <h4 className="text-2xl font-bold pt-6 text-black dark:text-white">
                   {items.heading}
@@ -83,4 +83,5 @@ const Articles = () => {
     </section>
   );
 };
+
 export default Articles;

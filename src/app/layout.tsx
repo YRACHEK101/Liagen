@@ -5,6 +5,7 @@ import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
 import Aoscompo from "@/utils/aos";
+
 const font = Urbanist({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${font.className}`}>
+      <body className={`${font.className} bg-white dark:bg-gray-900`}>
         <ThemeProvider
           attribute="class"
           enableSystem={true}
@@ -22,7 +23,7 @@ export default function RootLayout({
         >
           <Aoscompo>
             <Header />
-            {children}
+            <main className="min-h-screen">{children}</main>
             <Footer />
           </Aoscompo>
           <ScrollToTop />

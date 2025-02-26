@@ -66,7 +66,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
       <div className="bg-white dark:bg-darkHeroBg shadow-testimonial m-3 p-10 rounded-3xl">
         <Image
           src={items.imgSrc}
-          alt={`${items.name} - ${items.profession} testimonial image`}
+          alt={`${items.name} - ${items.profession} témoignage`}
           width={71}
           height={71}
           className="inline-block m-auto absolute top-3"
@@ -74,7 +74,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
         <h4 className="text-16 font-medium text-testColor my-4 text-black dark:text-white">
           {items.comment}
         </h4>
-        <hr style={{ color: "border" }} />
+        <hr className="border border-gray-300 my-4" />
         <div className="flex justify-between">
           <div>
             <h3 className="text-16 font-medium pt-4 pb-2 text-black dark:text-white">
@@ -100,20 +100,20 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
   );
 };
 
-const Testimonial: React.FC = () => {
+const Temoignages: React.FC = () => {
   return (
     <section className="bg-testimonial dark:bg-darkmode bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-[url('/images/wework/elipse.svg')] before:bg-no-repeat before:bg-center" id="testimonial-section">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="">
           <div className="text-center">
             <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white my-3">
-              See what others are saying.
+              Découvrez l'avis de nos clients.
             </h3>
             <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white text-opacity-50 lg:mr-48 my-4">
-              See what others are saying.
+              Découvrez l'avis de nos clients.
             </h3>
             <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white text-opacity-25 lg:-mr-32 my-4">
-              See what others are saying.
+              Découvrez l'avis de nos clients.
             </h3>
           </div>
           <div className="mt-20">
@@ -129,4 +129,4 @@ const Testimonial: React.FC = () => {
   );
 };
 
-export default Testimonial;
+export default Temoignages;

@@ -43,6 +43,7 @@ function SamplePrevArrow(props: { className: any; style: any; onClick: any }) {
     />
   );
 }
+
 const settings = {
   dots: false,
   infinite: true,
@@ -51,20 +52,7 @@ const settings = {
   arrows: true,
   autoplay: false,
   speed: 500,
-  nextArrow: (
-    <SampleNextArrow
-      className={undefined}
-      style={undefined}
-      onClick={undefined}
-    />
-  ),
-  prevArrow: (
-    <SamplePrevArrow
-      className={undefined}
-      style={undefined}
-      onClick={undefined}
-    />
-  ),
+  
   cssEase: "linear",
   responsive: [
     {
@@ -79,19 +67,19 @@ const settings = {
   ],
 };
 
-const Featured = () => {
+const CampagnesMarketing = () => {
   return (
-    <section className="relative bg-deepSlate dark:bg-darkmode -mt-80 pt-80 after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')]  after:top-72 after:right-0 after:bg-no-repeat">
+    <section className="relative bg-deepSlate dark:bg-darkmode -mt-10 pt-20 after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')] after:top-10 after:right-0 after:bg-no-repeat">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md relative">
         <div className="text-center mt-24">
-          <h3 className="text-65 sm:text-6xl font-bold text-white my-2">
-            Featured works.
+          <h3 className="text-6xl sm:text-8xl font-bold text-white my-2">
+            Campagnes marketing.
           </h3>
-          <h3 className="text-65 sm:text-6xl font-bold text-white text-opacity-50 lg:mr-48 my-2">
-            Featured works.
+          <h3 className="text-6xl sm:text-8xl font-bold text-white opacity-50 lg:mr-48 my-2">
+            Campagnes marketing.
           </h3>
-          <h3 className="text-65 sm:text-6xl font-bold text-white text-opacity-25 lg:-mr-32 my-2">
-            Featured works.
+          <h3 className="text-6xl sm:text-8xl font-bold text-white opacity-25 lg:-mr-32 my-2">
+            Campagnes marketing.
           </h3>
         </div>
 
@@ -101,7 +89,7 @@ const Featured = () => {
               <div className="bg-transparent m-3 rounded-3xl">
                 <Image
                   src={items.imgSrc}
-                  alt="gaby"
+                  alt="marketing"
                   width={636}
                   height={620}
                   className="rounded-2xl"
@@ -119,4 +107,5 @@ const Featured = () => {
     </section>
   );
 };
-export default Featured;
+
+export default CampagnesMarketing;
