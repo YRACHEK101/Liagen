@@ -38,7 +38,7 @@ const SignUp = () => {
   };
 
   return (
-    <>
+    <div className="bg-white">
       <div className="mb-10 text-center mx-auto inline-block max-w-[160px]">
         <Logo />
       </div>
@@ -106,7 +106,7 @@ const SignUp = () => {
           Sign In
         </Link>
       </p>
-    </>
+    </div>
   );
 };
 

@@ -46,7 +46,7 @@ const Hero = () => {
               Stratégies créatives pour votre succès.
             </motion.h1>
             <motion.button
-              className="bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode mt-8"
+              className="bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-primary mt-8"
               initial={leftAnimation.initial}
               animate={leftAnimation.animate}
               exit={leftAnimation.exit}

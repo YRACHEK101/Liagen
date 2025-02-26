@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${font.className} bg-white dark:bg-gray-900`}>
+      <body className={`${font.className} bg-white `}>
         <ThemeProvider
           attribute="class"
           enableSystem={true}

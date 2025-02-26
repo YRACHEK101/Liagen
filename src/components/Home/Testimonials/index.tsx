@@ -63,7 +63,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
 
   return (
     <div className="relative py-10">
-      <div className="bg-white dark:bg-darkHeroBg shadow-testimonial m-3 p-10 rounded-3xl">
+      <div className="bg-white shadow-testimonial m-3 p-10 rounded-3xl">
         <Image
           src={items.imgSrc}
           alt={`${items.name} - ${items.profession} témoignage`}
@@ -71,16 +71,16 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
           height={71}
           className="inline-block m-auto absolute top-3"
         />
-        <h4 className="text-16 font-medium text-testColor my-4 text-black dark:text-white">
+        <h4 className="text-16 font-medium text-testColor my-4 text-black">
           {items.comment}
         </h4>
         <hr className="border border-gray-300 my-4" />
         <div className="flex justify-between">
           <div>
-            <h3 className="text-16 font-medium pt-4 pb-2 text-black dark:text-white">
+            <h3 className="text-16 font-medium pt-4 pb-2 text-black">
               {items.name}
             </h3>
-            <h3 className="text-xs font-medium pb-2 opacity-50 text-black dark:text-white">
+            <h3 className="text-xs font-medium pb-2 opacity-50 text-black">
               {items.profession}
             </h3>
           </div>
@@ -102,17 +102,17 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
 
 const Temoignages: React.FC = () => {
   return (
-    <section className="bg-testimonial dark:bg-darkmode bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-[url('/images/wework/elipse.svg')] before:bg-no-repeat before:bg-center" id="testimonial-section">
+    <section className="bg-testimonial bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-[url('/images/wework/elipse.svg')] before:bg-no-repeat before:bg-center" id="testimonial-section">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="">
           <div className="text-center">
-            <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white my-3">
+            <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">
               Découvrez l'avis de nos clients.
             </h3>
-            <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white text-opacity-50 lg:mr-48 my-4">
+            <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">
               Découvrez l'avis de nos clients.
             </h3>
-            <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white text-opacity-25 lg:-mr-32 my-4">
+            <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">
               Découvrez l'avis de nos clients.
             </h3>
           </div>

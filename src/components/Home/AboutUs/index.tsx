@@ -6,9 +6,9 @@ import { Aboutdata } from "@/app/api/data";
 
 const Aboutus = () => {
   return (
-    <section className="bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className="bg-cover bg-center bg-white overflow-hidden">
       <div className="container mx-auto lg:max-w-screen-xl relative z-1 md:max-w-screen-md">
-        <div className="lg:p-12 px-2 bg-grey dark:bg-darkmode rounded-3xl">
+        <div className="lg:p-12 px-2 bg-grey rounded-3xl">
           <Image
             src="/images/aboutus/dots.svg"
             width={100}
@@ -26,9 +26,9 @@ const Aboutus = () => {
             {Aboutdata.map((item, i) => (
               <div
                 key={i}
-                className="hover:bg-darkmode bg-white rounded-3xl p-8 shadow-xl group mb-28"
+                className="bg-white rounded-3xl p-8 shadow-xl group mb-28"
               >
-                <h4 className="text-4xl font-semibold text-black group-hover:text-white mb-5">
+                <h4 className="text-4xl font-semibold text-black mb-5">
                   {item.heading}
                 </h4>
                 <Image
@@ -38,7 +38,7 @@ const Aboutus = () => {
                   height={100}
                   className="mb-5"
                 />
-                <h4 className="text-lg font-normal text-black group-hover:text-white mb-5">
+                <h4 className="text-lg font-normal text-black mb-5">
                   {item.paragraph}
                 </h4>
                 <Link

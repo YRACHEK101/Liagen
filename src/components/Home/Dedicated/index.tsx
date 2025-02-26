@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Dedie = () => {
   return (
-    <section className="relative bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className="relative bg-cover bg-center bg-white overflow-hidden">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <Image

@@ -78,3 +78,11 @@ section {
     background-position: 84% 100%, 12% 18%; /* Original background position for large screens */
   }
 }
+
+.dark:bg-darkmode {
+  /* ... existing code ... */
+}
+
+.bg-white {
+  /* ... existing code ... */
+}

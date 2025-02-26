@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const RejoignezNous = () => {
   return (
-    <section className="overflow-hidden dark:bg-darkmode bg-joinus">
+    <section className="overflow-hidden bg-joinus">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="text-center">
           <h3 className="text-blue text-lg font-normal tracking-widest uppercase">
@@ -41,7 +41,7 @@ const RejoignezNous = () => {
             <div className="sm:mr-3">
               <Link
                 href="#"
-                className="w-full sm:w-0 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-primary py-5 px-12 hover:bg-darkmode duration-300"
+                className="w-full sm:w-0 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-primary py-5 px-12 hover:bg-primary duration-300"
               >
                 Demandez un devis
               </Link>

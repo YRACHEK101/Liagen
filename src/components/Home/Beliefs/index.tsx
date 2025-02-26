@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NosValeurs = () => {
   return (
-    <section className="bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className="bg-cover bg-center bg-white overflow-hidden">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {/* COLONNE-1 */}
@@ -25,7 +25,7 @@ const NosValeurs = () => {
             <div className="text-center sm:text-start">
               <Link
                 href="#"
-                className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode"
+                className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full duration-300 bg-primary border border-primary"
               >
                 Découvrir
               </Link>
@@ -48,7 +48,7 @@ const NosValeurs = () => {
               <div className="text-center sm:text-start">
                 <Link
                   href="#"
-                  className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-primary border border-primary hover:bg-darkmode hover:border-darkmode"
+                  className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-primary border border-primary"
                 >
                   Nos services
                 </Link>

@@ -52,7 +52,6 @@ const settings = {
   arrows: true,
   autoplay: false,
   speed: 500,
-  
   cssEase: "linear",
   responsive: [
     {
@@ -69,7 +68,7 @@ const settings = {
 
 const CampagnesMarketing = () => {
   return (
-    <section className="relative bg-deepSlate dark:bg-darkmode -mt-10 pt-20 after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')] after:top-10 after:right-0 after:bg-no-repeat">
+    <section className="relative bg-deepSlate -mt-10 pt-20 after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')] after:top-10 after:right-0 after:bg-no-repeat">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md relative">
         <div className="text-center mt-24">
           <h3 className="text-6xl sm:text-8xl font-bold text-white my-2">

@@ -5,7 +5,7 @@ import { Disclosure } from "@headlessui/react";
 
 const FoireAuxQuestions = () => {
   return (
-    <section className="relative py-1 bg-cover bg-center overflow-hidden dark:bg-darkmode">
+    <section className="relative py-1 bg-cover bg-center bg-white overflow-hidden">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="relative rounded-2xl py-24 bg-faqBg bg-no-repeat bg-cover bg-primary">
           <p className="text-lg font-normal text-white text-center mb-6">FAQ</p>
@@ -27,7 +27,7 @@ const FoireAuxQuestions = () => {
                       </div>
                     </Disclosure.Button>
                     <Disclosure.Panel className="text-16 text-black/50 font-normal text-left pt-4 mt-6 border-t border-border">
-                      
+                      {/* Content for the first FAQ */}
                     </Disclosure.Panel>
                   </>
                 )}
