@@ -72,7 +72,7 @@ const Gestion = () => {
   return (
     <section id="services-section">
       <div className="mx-auto max-w-7xl">
-        <h3 className="text-center text-6xl font-black mx-24">
+        <h3 className="text-center text-6xl font-black mx-24 text-black">
           Stratégie marketing digitale complète pour votre entreprise
         </h3>
 
