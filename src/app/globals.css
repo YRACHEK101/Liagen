@@ -86,3 +86,7 @@ section {
 .bg-white {
   /* ... existing code ... */
 }
+
+.force-dark-text {
+  color: black !important;
+}
