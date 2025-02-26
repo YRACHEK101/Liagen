@@ -9,7 +9,7 @@ const FoireAuxQuestions = () => {
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
         <div className="relative rounded-2xl py-24 bg-faqBg bg-no-repeat bg-cover bg-primary">
           <p className="text-lg font-normal text-white text-center mb-6">FAQ</p>
-          <h2 className="text-6xl font-semibold text-center text-white mx-72">
+          <h2 className="text-4xl font-semibold text-center text-white sm:text-6xl md:text-7xl lg:text-8xl">
             Questions fréquemment posées.
           </h2>
           <div className="w-full px-4 pt-16">
@@ -20,8 +20,7 @@ const FoireAuxQuestions = () => {
                     <Disclosure.Button className="flex w-full justify-between items-center text-left text-2xl font-medium focus:outline-none">
                       <span className="text-black">Quels services de marketing proposez-vous ?</span>
                       <div
-                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
-                          }`}
+                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""}`}
                       >
                         <Icon icon="lucide:chevron-up" width="20" height="20" />
                       </div>
@@ -40,8 +39,7 @@ const FoireAuxQuestions = () => {
                     <Disclosure.Button className="flex w-full justify-between items-center rounded-lg text-left text-2xl font-medium focus:outline-none">
                       <span className="text-black">Comment mesurez-vous les résultats de vos campagnes ?</span>
                       <div
-                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
-                          }`}
+                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""}`}
                       >
                         <Icon icon="lucide:chevron-up" width="20" height="20" />
                       </div>
@@ -66,8 +64,7 @@ const FoireAuxQuestions = () => {
                     <Disclosure.Button className="flex w-full justify-between items-center rounded-lg text-left text-2xl font-medium focus:outline-none">
                       <span className="text-black">Comment débute une collaboration avec votre agence ?</span>
                       <div
-                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
-                          }`}
+                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""}`}
                       >
                         <Icon icon="lucide:chevron-up" width="20" height="20" />
                       </div>
