@@ -49,42 +49,48 @@ export const Aboutdata: { heading: string; imgSrc: string; paragraph: string; li
   },
 ];
 
-export const DataType: { profession: string; name: string; imgSrc: string; nameClassName?: string; }[] = [
+export const DataType: { profession: string; name: string; imgSrc: string; nameClassName?: string; professionClassName?: string; }[] = [
   {
     profession: "Directeur Marketing",
     name: "Jane Smith",
     imgSrc: "/images/wework/avatar.svg",
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     profession: "Spécialiste SEO",
     name: "John Doe",
     imgSrc: "/images/wework/avatar3.svg",
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     profession: "Gestionnaire des Réseaux Sociaux",
     name: "Emily Johnson",
     imgSrc: "/images/wework/avatar4.svg",
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     profession: "Créateur de Contenu",
     name: "Michael Brown",
     imgSrc: "/images/wework/avatar.svg",
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     profession: "Analyste Marketing",
     name: "Sarah Lee",
     imgSrc: "/images/wework/avatar3.svg",
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     profession: "Designer Graphique",
     name: "David Kim",
     imgSrc: "/images/wework/avatar4.svg",
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
 ];
 
@@ -107,7 +113,7 @@ export const postData: { heading: string; imgSrc: string; }[] = [
   },
 ];
 
-export const Testimonials: { profession: string; comment: string; imgSrc: string; name: string; rating: number; nameClassName?: string; }[] = [
+export const Testimonials: { profession: string; comment: string; imgSrc: string; name: string; rating: number; nameClassName?: string; professionClassName?: string; }[] = [
   {
     name: "Robert Fox",
     profession: "Responsable Marketing, XYZ Corp",
@@ -116,6 +122,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user1.svg",
     rating: 5,
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     name: "Leslie Alexander",
@@ -125,6 +132,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user2.svg",
     rating: 4,
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     name: "Cody Fisher",
@@ -134,6 +142,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user3.svg",
     rating: 4,
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     name: "Robert Fox",
@@ -143,6 +152,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user1.svg",
     rating: 4,
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     name: "Leslie Alexander",
@@ -152,6 +162,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user2.svg",
     rating: 4,
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
   {
     name: "Cody Fisher",
@@ -161,6 +172,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user3.svg",
     rating: 4,
     nameClassName: "text-gray-900 font-medium", // Added dark text styling
+    professionClassName: "text-gray-900 font-medium", // Added dark text styling for profession
   },
 ];
 
