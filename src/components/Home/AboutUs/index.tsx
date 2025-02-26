@@ -19,7 +19,7 @@ const Aboutus = () => {
           <p className="text-center text-primary text-18 tracking-widest uppercase mt-10">
             À propos de nous
           </p>
-          <h4 className="text-center text-4xl lg:text-65 font-bold pb-12">
+          <h4 className="text-center text-4xl lg:text-65 font-bold pb-12 text-black">
             Découvrez notre agence de marketing.
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 lg:gap-x-32 mt-16">
