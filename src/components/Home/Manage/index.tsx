@@ -79,15 +79,15 @@ const Gestion = () => {
         <div className="md:flex md:justify-around mt-20">
           <div className="flex gap-5 justify-center md:justify-start">
             <Image src="/images/manage/right.svg" alt="icone-avantage" width={21} height={14} />
-            <h4 className="text-18 font-semibold">Audit marketing gratuit</h4>
+            <h4 className="text-18 font-semibold text-black">Audit marketing gratuit</h4>
           </div>
           <div className="flex gap-5 justify-center md:justify-start">
             <Image src="/images/manage/right.svg" alt="icone-avantage" width={21} height={14} />
-            <h4 className="text-18 font-semibold">Stratégie personnalisée</h4>
+            <h4 className="text-18 font-semibold text-black">Stratégie personnalisée</h4>
           </div>
           <div className="flex gap-5 justify-center md:justify-start">
             <Image src="/images/manage/right.svg" alt="icone-avantage" width={21} height={14} />
-            <h4 className="text-18 font-semibold">Engagement de résultats</h4>
+            <h4 className="text-18 font-semibold text-black">Engagement de résultats</h4>
           </div>
         </div>
 
@@ -95,7 +95,7 @@ const Gestion = () => {
           <div className="dance-text -ml-80 text-center -rotate-[10deg] mb-5">économisez 20% sur l'année</div>
           <Image src="/images/manage/toggle.svg" alt="image-bascule" width={24} height={24} className="absolute left-[37%] top-8" />
           <div className="flex justify-center">
-            <h3 className="text-14 font-medium mr-5">Engagement annuel</h3>
+            <h3 className="text-14 font-medium mr-5 text-black">Engagement annuel</h3>
             <Switch
               checked={enabled}
               onChange={toggleEnabled}
@@ -106,23 +106,23 @@ const Gestion = () => {
                 className={`inline-block h-4 w-4 transform rounded-full bg-white transition ${enabled ? "translate-x-6" : "translate-x-1"}`}
               />
             </Switch>
-            <h3 className="text-14 font-medium ml-5">Mensuel sans engagement</h3>
+            <h3 className="text-14 font-medium ml-5 text-black">Mensuel sans engagement</h3>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 gap-14 manage">
           {filteredData.map((items, i) => (
             <div className="shadow-manage-shadow border border-border text-center p-10" key={i}>
-              <h4 className="text-2xl font-bold mb-3">{items.heading}</h4>
-              <h2 className="text-6xl font-extrabold mb-3">{items.price}€</h2>
-              <p className="text-14 font-medium text-darkgrey mb-6">{items.user}</p>
+              <h4 className="text-2xl font-bold mb-3 text-black">{items.heading}</h4>
+              <h2 className="text-6xl font-extrabold mb-3 text-black">{items.price}€</h2>
+              <p className="text-14 font-medium text-darkgrey mb-6 text-black">{items.user}</p>
 
               <button className="text-14 font-bold text-primary bg-transparent hover:bg-primary hover:text-white border-2 border-primary rounded-full py-4 px-12 mb-6">
                 Demander un rendez-vous
               </button>
               {/* Affichage dynamique des caractéristiques */}
               {Object.entries(items.features).map(([key, value]) => (
-                <h3 className="text-sm font-medium text-darkgrey mb-3" key={key}>
+                <h3 className="text-sm font-medium text-darkgrey mb-3 text-black" key={key}>
                   {value}
                 </h3>
               ))}
