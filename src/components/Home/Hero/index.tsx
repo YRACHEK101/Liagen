@@ -37,7 +37,7 @@ const Hero = () => {
               <p className="text-primary text-lg font-bold">AGENCE DE MARKETING</p>
             </motion.div>
             <motion.h1
-              className="text-4xl md:text-8xl font-bold mt-4"
+              className="text-4xl md:text-8xl font-bold mt-4 text-black"
               initial={leftAnimation.initial}
               animate={leftAnimation.animate}
               exit={leftAnimation.exit}
