@@ -18,16 +18,16 @@ const FoireAuxQuestions = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between items-center text-left text-2xl font-medium focus:outline-none">
-                      <span className="text-black">Quels services de marketing proposez-vous ?</span>
-                      <div
-                        className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-                      >
-                        <Icon icon="lucide:chevron-up" width="20" height="20" />
-                      </div>
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="text-16 text-black/50 font-normal text-left pt-4 mt-6 border-t border-border">
-                      {/* Content for the first FAQ */}
-                    </Disclosure.Panel>
+  <span className="text-black">Quels services de marketing proposez-vous ?</span>
+  <div
+    className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+  >
+    <Icon icon="lucide:chevron-up" width="20" height="20" />
+  </div>
+</Disclosure.Button>
+<Disclosure.Panel className="text-16 text-black/50 font-normal text-left pt-4 mt-6 border-t border-border">
+  Notre agence de marketing en France propose une gamme complète de services pour répondre à vos besoins. Nous offrons des stratégies de marketing digital, la gestion des réseaux sociaux, le référencement (SEO), la création de contenu, et bien plus encore. Nous travaillons avec vous pour développer des campagnes sur mesure qui maximisent votre visibilité et votre engagement en ligne.
+</Disclosure.Panel>
                   </>
                 )}
               </Disclosure>

@@ -22,6 +22,7 @@ const Hero = () => {
 
   return (
     <section className="relative py-16 md:py-16 overflow-hidden z-1 bg-white">
+      
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left content area */}
