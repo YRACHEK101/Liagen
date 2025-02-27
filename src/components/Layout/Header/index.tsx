@@ -1,7 +1,7 @@
 "use client";
+import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
 import { headerData } from "../Header/Navigation/menuData";
 import Logo from "./Logo";
 import Image from "next/image";
@@ -10,7 +10,8 @@ import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
 import Signin from "@/components/Auth/SignIn";
 import SignUp from "@/components/Auth/SignUp";
 import { useTheme } from "next-themes";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
+import { riHamburgerMenu } from "@iconify/icons-ri"; // Corrected import statement
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
@@ -71,28 +72,21 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full transition-all duration-300 border-b border-black/60 ${sticky ? " shadow-lg bg-white" : "shadow-none"
-        }`}
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${sticky ? "shadow-lg bg-white" : "shadow-none"} ${theme === 'dark' ? 'bg-gray-400' : 'bg-white'}`}
     >
-      <div className="lg:py-0 py-2">
-        <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
-          <div
-            className={`pr-16 border-r border-black/60 duration-300 ${sticky ? "py-3" : "py-7"
-              }`}
-          >
+      <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md py-1">
+        <div className="flex items-center justify-between px-4">
+          <div className={`flex-shrink-0 py-2 ${sticky ? "pr-3" : "pr-4"}`}>
             <Logo />
           </div>
-          <nav className="hidden lg:flex flex-grow items-center gap-8 justify-center">
+          <nav className="hidden lg:flex lg:items-center lg:justify-between lg:gap-6">
             {headerData.map((item, index) => (
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-          <div
-            className={`flex items-center gap-4 pl-16 border-l border-black/60 duration-300 ${sticky ? "py-3" : "py-7"
-              }`}
-          >
+          <div className="flex items-center gap-2 pl-4 lg:pl-8">
             <button
-              className="hidden lg:block bg-transparent text-darkmode border hover:bg-darkmode border-darkmode hover:text-white px-4 py-2 rounded-lg"
+              className="hidden lg:block bg-transparent text-black hover:text-primary px-3 py-1 rounded-lg text-sm"
               onClick={() => {
                 setIsSignInOpen(true);
               }}
@@ -103,24 +97,21 @@ const Header: React.FC = () => {
               <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
                 <div
                   ref={signInRef}
-                  className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg px-8 pt-14 pb-8 text-center bg-dark_grey bg-opacity-90 backdrop-blur-md"
+                  className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg px-8 pt-14 pb-8 text-center bg-white backdrop-blur-md"
                 >
                   <button
                     onClick={() => setIsSignInOpen(false)}
-                    className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
+                    className="absolute top-0 right-0 mr-8 mt-8"
                     aria-label="Close Sign In Modal"
                   >
-                    <Icon
-                      icon="tabler:currency-xrp"
-                      className="text-white hover:text-primary text-24 inline-block me-2"
-                    />
+                    <Icon icon="ri:currency-xrp" className="text-black hover:text-primary text-24 inline-block me-2" />
                   </button>
                   <Signin />
                 </div>
               </div>
             )}
             <button
-              className="hidden lg:block bg-darkmode text-white hover:bg-transparent hover:text-darkmode border border-darkmode px-4 py-2 rounded-lg"
+              className="hidden lg:block bg-black text-white hover:bg-transparent hover:text-black border border-black px-3 py-1 rounded-lg text-sm"
               onClick={() => {
                 setIsSignUpOpen(true);
               }}
@@ -131,17 +122,14 @@ const Header: React.FC = () => {
               <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
                 <div
                   ref={signUpRef}
-                  className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-dark_grey bg-opacity-90 backdrop-blur-md px-8 pt-14 pb-8 text-center"
+                  className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white bg-opacity-90 backdrop-blur-md px-8 pt-14 pb-8 text-center"
                 >
                   <button
                     onClick={() => setIsSignUpOpen(false)}
-                    className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
+                    className="absolute top-0 right-0 mr-8 mt-8"
                     aria-label="Close Sign Up Modal"
                   >
-                    <Icon
-                      icon="tabler:currency-xrp"
-                      className="text-white hover:text-primary text-24 inline-block me-2"
-                    />
+                    <Icon icon="ri:currency-xrp" className="text-black hover:text-primary text-24 inline-block me-2" />
                   </button>
                   <SignUp />
                 </div>
@@ -149,63 +137,64 @@ const Header: React.FC = () => {
             )}
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
-              className="block lg:hidden p-2 rounded-lg"
+              className="block lg:hidden p-1 rounded-lg bg-black text-white"
               aria-label="Toggle mobile menu"
             >
-              <span className="block w-6 h-0.5 bg-white"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
+              <Icon icon="ri-hamburger-menu" className="w-5 h-5" />
+              <span className="block w-5 h-0.5 bg-white"></span>
+              <span className="block w-5 h-0.5 bg-white mt-1"></span>
+              <span className="block w-5 h-0.5 bg-white mt-1"></span>
             </button>
           </div>
         </div>
-        {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" />
-        )}
-        <div
-          ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"
-            } z-50`}
-        >
-          <div className="flex items-center justify-between p-4">
-            <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
-              <Logo />
-            </h2>
-
-            {/*  */}
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
-              aria-label="Close menu Modal"
-            ></button>
-          </div>
-          <nav className="flex flex-col items-start p-4">
-            {headerData.map((item, index) => (
-              <MobileHeaderLink key={index} item={item} />
-            ))}
-            <div className="mt-4 flex flex-col space-y-4 w-full">
-              <Link
-                href="#"
-                className="bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-                onClick={() => {
-                  setIsSignInOpen(true);
-                  setNavbarOpen(false);
-                }}
-              >
-                Sign In
-              </Link>
-              <Link
-                href="#"
-                className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                onClick={() => {
-                  setIsSignUpOpen(true);
-                  setNavbarOpen(false);
-                }}
-              >
-                Sign Up
-              </Link>
-            </div>
-          </nav>
+      </div>
+      {navbarOpen && (
+        <div className="fixed top-0 left-0 h-full w-full bg-black bg-opacity-50 z-40" />
+      )}
+      <div
+        ref={mobileMenuRef}
+        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 ${navbarOpen ? "translate-x-0" : "translate-x-full"}
+        z-50`}
+      >
+        <div className="flex items-center justify-between p-3">
+          <h2 className="text-lg font-bold text-black dark:text-white">
+            <Logo />
+          </h2>
+          <button
+            onClick={() => setNavbarOpen(false)}
+            className="bg-black text-white dark:bg-gray-100 dark:text-black w-8 h-8 rounded-lg absolute top-0 right-0 mr-6 mt-6 border border-gray-300 shadow hover:bg-gray-200 dark:hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 transition duration-300 ease-in-out"
+            aria-label="Close menu Modal"
+          >
+            X
+          </button>
         </div>
+        <nav className="flex flex-col items-start p-4">
+          {headerData.map((item, index) => (
+            <MobileHeaderLink key={index} item={item} />
+          ))}
+          <div className="mt-4 flex flex-col space-y-4 w-full">
+            <Link
+              href="#"
+              className="bg-transparent border border-primary text-primary px-3 py-1 rounded-lg hover:bg-primary hover:text-white text-sm"
+              onClick={() => {
+                setIsSignInOpen(true);
+                setNavbarOpen(false);
+              }}
+            >
+              Sign In
+            </Link>
+            <Link
+              href="#"
+              className="bg-primary text-white px-3 py-1 rounded-lg hover:bg-primary hover:bg-primary text-sm"
+              onClick={() => {
+                setIsSignUpOpen(true);
+                setNavbarOpen(false);
+              }}
+            >
+              Sign Up
+            </Link>
+          </div>
+        </nav>
       </div>
     </header>
   );

@@ -1,3 +1,4 @@
+/* Tailwind base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,18 +7,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* General section styles */
 section {
-  @apply py-32;
+  @apply py-16; /* Default padding for sections */
 }
 
+/* Styles for slick carousel navigation */
 .slick-next {
-  right: -70px !important;
+  right: -50px !important;
 }
 
 .slick-prev {
-  left: -70px !important;
+  left: -50px !important;
 }
 
+/* Styles for the joinus background */
 .bg-joinus {
   background-image: url("/images/joinus/horn.svg"), url("/images/joinus/paint.svg");
   background-repeat: no-repeat, no-repeat;
@@ -26,8 +30,9 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Small screens (mobile devices) */
   section {
-    @apply py-4; /* Reduced padding for smaller screens */
+    @apply py-8; /* Reduced padding for smaller screens */
   }
 
   .slick-next {
@@ -43,17 +48,18 @@ section {
   }
 }
 
+/* Medium screens (tablets) */
 @media (min-width: 769px) and (max-width: 1024px) {
   section {
-    @apply py-6; /* Medium padding for medium screens */
+    @apply py-12; /* Medium padding for medium screens */
   }
 
   .slick-next {
-    right: -50px !important; /* Slightly adjusted position for medium screens */
+    right: -40px !important; /* Slightly adjusted position for medium screens */
   }
 
   .slick-prev {
-    left: -50px !important; /* Slightly adjusted position for medium screens */
+    left: -40px !important; /* Slightly adjusted position for medium screens */
   }
 
   .bg-joinus {
@@ -61,17 +67,18 @@ section {
   }
 }
 
+/* Large screens (desktops) */
 @media (min-width: 1025px) {
   section {
-    @apply py-8; /* Original padding for large screens */
+    @apply py-16; /* Original padding for large screens */
   }
 
   .slick-next {
-    right: -70px !important; /* Original position for large screens */
+    right: -50px !important; /* Original position for large screens */
   }
 
   .slick-prev {
-    left: -70px !important; /* Original position for large screens */
+    left: -50px !important; /* Original position for large screens */
   }
 
   .bg-joinus {
@@ -79,14 +86,17 @@ section {
   }
 }
 
+/* Dark mode styles */
 .dark:bg-darkmode {
   /* ... existing code ... */
 }
 
+/* White background styles */
 .bg-white {
   /* ... existing code ... */
 }
 
+/* Force dark text styles */
 .force-dark-text {
   color: black !important;
 }
