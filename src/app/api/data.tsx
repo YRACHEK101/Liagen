@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 import Image from "next/image";
 
-export const ProductType: { id: number; section: string; link: string[]; }[] = [
+export const ProductType: { id: number; section: string; link: string[] }[] = [
   {
     id: 1,
     section: "Menu",
@@ -25,7 +25,7 @@ export const ProductType: { id: number; section: string; link: string[]; }[] = [
   }
 ];
 
-export const Aboutdata: { heading: string; imgSrc: string; paragraph: string; link: string; }[] = [
+export const Aboutdata: { heading: string; imgSrc: string; paragraph: string; link: string }[] = [
   {
     heading: "À propos de notre agence de marketing",
     imgSrc: "/images/aboutus/imgOne.svg",
@@ -49,52 +49,52 @@ export const Aboutdata: { heading: string; imgSrc: string; paragraph: string; li
   },
 ];
 
-export const DataType: { profession: string; name: string; imgSrc: string; nameClassName?: string; professionClassName?: string; }[] = [
+export const DataType: { profession: string; name: string; imgSrc: string; nameClassName?: string; professionClassName?: string }[] = [
   {
     profession: "Directeur Marketing",
     name: "Jane Smith",
     imgSrc: "/images/wework/avatar.svg",
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Spécialiste SEO",
     name: "John Doe",
     imgSrc: "/images/wework/avatar3.svg",
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Gestionnaire des Réseaux Sociaux",
     name: "Emily Johnson",
     imgSrc: "/images/wework/avatar4.svg",
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Créateur de Contenu",
     name: "Michael Brown",
     imgSrc: "/images/wework/avatar.svg",
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Analyste Marketing",
     name: "Sarah Lee",
     imgSrc: "/images/wework/avatar3.svg",
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     profession: "Designer Graphique",
     name: "David Kim",
     imgSrc: "/images/wework/avatar4.svg",
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
 ];
 
-export const postData: { heading: string; imgSrc: string; }[] = [
+export const postData: { heading: string; imgSrc: string }[] = [
   {
     heading: "Stratégies SEO pour les petites entreprises",
     imgSrc: "/images/featured/feat1.jpg",
@@ -113,7 +113,7 @@ export const postData: { heading: string; imgSrc: string; }[] = [
   },
 ];
 
-export const Testimonials: { profession: string; comment: string; imgSrc: string; name: string; rating: number; nameClassName?: string; professionClassName?: string; }[] = [
+export const Testimonials: { profession: string; comment: string; imgSrc: string; name: string; rating: number; nameClassName?: string; professionClassName?: string }[] = [
   {
     name: "Robert Fox",
     profession: "Responsable Marketing, XYZ Corp",
@@ -122,7 +122,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user1.svg",
     rating: 5,
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Leslie Alexander",
@@ -132,7 +132,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user2.svg",
     rating: 4,
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Cody Fisher",
@@ -142,7 +142,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user3.svg",
     rating: 4,
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Robert Fox",
@@ -152,7 +152,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user1.svg",
     rating: 4,
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Leslie Alexander",
@@ -162,7 +162,7 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user2.svg",
     rating: 4,
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
   {
     name: "Cody Fisher",
@@ -172,11 +172,11 @@ export const Testimonials: { profession: string; comment: string; imgSrc: string
     imgSrc: "/images/testimonial/user3.svg",
     rating: 4,
     nameClassName: "text-black dark:text-black font-medium", // Force black text in both modes
-    professionClassName: "force-dark-text font-medium", // Updated to force dark text
+    professionClassName: "text-black dark:text-black font-medium", // Force black text in both modes
   },
 ];
 
-export const Article: { time: string; heading: string; heading2: string; date: string; imgSrc: string; name: string; nameClassName?: string; }[] = [
+export const Article: { time: string; heading: string; heading2: string; date: string; imgSrc: string; name: string; nameClassName?: string }[] = [
   {
     time: "5 min",
     heading: "Meilleures pratiques SEO",

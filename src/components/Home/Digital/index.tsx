@@ -13,7 +13,7 @@ const Numerique = () => {
             <h3 className="text-18 font-normal text-white mb-5 tracking-widest text-center lg:text-start uppercase mt-5">
               Qui nous sommes
             </h3>
-            <h4 className="text-65 sm:text-6xl font-bold text-white mb-8 leading-snug text-center lg:text-start">
+            <h4 className="text-65 sm:text-4xl font-bold text-white mb-8 leading-snug text-center lg:text-start">
               Nous sommes une agence marketing qui transforme votre vision en succès mesurable.
             </h4>
             <div className="text-center lg:text-start">

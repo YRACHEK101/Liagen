@@ -10,9 +10,9 @@ const RejoignezNous = () => {
           <h3 className="text-blue text-lg font-normal tracking-widest uppercase">
             Contactez-nous
           </h3>
-          <h2 className="text-6xl font-bold my-6">
-            Transformez votre visibilité marketing dès aujourd'hui.
-          </h2>
+          <h2 className="text-4xl font-bold my-6 text-black">
+  Transformez votre visibilité marketing dès aujourd'hui.
+</h2>
           <p className="text-black/50 text-base font-normal">
             Notre agence de marketing digital vous accompagne dans l'élaboration de 
             stratégies sur mesure. Expertise en référencement, publicité en ligne et 
