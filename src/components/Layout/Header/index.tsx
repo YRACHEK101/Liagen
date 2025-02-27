@@ -11,7 +11,7 @@ import Signin from "@/components/Auth/SignIn";
 import SignUp from "@/components/Auth/SignUp";
 import { useTheme } from "next-themes";
 import { Icon } from "@iconify/react";
-import { riHamburgerMenu } from "@iconify/icons-ri"; // Corrected import statement
+
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
