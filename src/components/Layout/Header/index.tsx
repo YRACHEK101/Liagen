@@ -137,7 +137,7 @@ const Header: React.FC = () => {
             )}
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
-              className="block lg:hidden p-1 rounded-lg bg-black text-white"
+              className="block lg:hidden p-2 rounded-lg bg-black text-white"
               aria-label="Toggle mobile menu"
             >
               <Icon icon="ri-hamburger-menu" className="w-5 h-5" />
